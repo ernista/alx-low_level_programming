@@ -1,25 +1,33 @@
-#include "holberton.h"
-
+nclude "main.h"
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * followed by a new line
+ * print_alphabet-this prints a - z
+ * Description: Write a function that prints the alphabet,
+ * in lowercase, followed by a new line.
+ *Return: Always 0.
  */
-void print_alphabet_x10(void)
+
+
+
+int print_alphabet(void)
+
 {
-	char ch;
-	int i;
 
-	i = 0;
+		char c = 'a';
 
-	while (i < 10)
-	{
-		ch = 'a';
-		while (ch <= 'z')
+
+
+		while (c <= 'z')
+
 		{
-			_putchar(ch);
-			ch++;
+
+			_putchar(c);
+
+			c++;
+
 		}
-		_putchar('\n');
-		i++;
-	}
+
+			_putchar('\n');
+
+		return (0);
+
 }
